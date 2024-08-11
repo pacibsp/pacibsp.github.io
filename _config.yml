@@ -1,0 +1,18 @@
+# Site settings
+title: PACIBSP | security
+author: Shallan
+description: >-
+  A computer security blog with an analytical bent.
+baseurl: ""
+url: "pacibsp.github.io"
+twitter_username: sha1lan
+mastodon:
+  - username: sha1lan
+    instance: infosec.exchange
+permalink: /:year/:title:output_ext
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
