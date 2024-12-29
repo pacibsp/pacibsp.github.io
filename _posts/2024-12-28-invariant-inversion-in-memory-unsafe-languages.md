@@ -103,8 +103,8 @@ bool Evaluator::evaluate(const DataSet& data)
 	for (uint16_t i = 0; i < COUNT; i++) {
 	    uint8_t filter = *(uint8_t *)&data.filter[i];
 	    uint16_t *slot = filter ? &keep[index] : &discard;
-        index += filter;
-        *slot = data.value[i];
+	    index += filter;
+	    *slot = data.value[i];
 	}
 	return success != 0;
 }
